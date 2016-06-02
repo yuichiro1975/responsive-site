@@ -89,97 +89,8 @@ section {
     @include border-radius(4px);
     @include box-sizing(border-box);
   }
-  i {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 5px;
-    padding-top: 15px;
-    background-color: $keyColor;
-    font-size: 4.5rem;
-    color: #FFF;
-    text-align: center;
-    @include box-sizing(border-box);
-    @include border-radius(50%);
-    @extend .block-center;
-  }
-  h3 {
-    @extend .abel;
-    @extend .uppercase;
-    color: $keyColor;
-    margin-bottom:10px;
-    font-size: 2.4rem;
-    font-weight: bold;
-  }
 }
 
-// Works
-#works {
-  padding-bottom: 0;
-  h2 {
-    margin-bottom: 50px;
-  }
-  .works-box {
-    width: 100%;                  // widthを100%にして1列に1つ表示（つまり縦に並ぶ）
-    float: left;
-    height: 100%;
-    a {
-      display: block;
-      position: relative;
-      .works-box-inner {
-        background-color: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        color: #FFF;
-        div {
-          position: absolute;
-          margin: auto;
-          height: 40%;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 10px 20px;
-        }
-        h3 {
-          font-size: 1.6rem;
-          margin: 0 0 5px;
-          font-weight: bold;
-        }
-        small {
-          font-size: 1rem;
-          display: block;
-          margin-bottom: 15px;
-        }
-        .button-readmore {
-          margin: auto;
-          text-align: center;
-          padding: 5px 0;
-          width: 180px;
-          display: block;
-          color: #FFF;
-          font-weight: bold;
-          background-color: $keyColor;
-          @extend .abel;
-          @extend .uppercase;
-          @include border-radius(4px);
-          font-size: 1rem;
-        }
-      }
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-  }
-  &::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-}
 
 
 // Contact
@@ -319,3 +230,4 @@ footer {
   background-size: cover;
   background-position: center center;
 }
+
