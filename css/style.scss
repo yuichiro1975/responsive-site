@@ -8,7 +8,7 @@ $baseColor: #fdfcf6;
 $subColor: #ffff00;
 $keyColor: #14c0c9;
 $fontColor: #4c4c4c;
-
+$accentColor : #0000ff;
 
 /* Base
 ------------------------------------------------------------*/
@@ -77,8 +77,8 @@ section {
     justify-content: space-between;
     @include flex-direction(column);    // スキルボックスを縦に並べる
   }
-  h2 {
-    color: $baseColor;
+  h1 {
+    color: $accentColor;
     margin-bottom: 60px;
   }
   .skill-box {
@@ -185,40 +185,28 @@ section {
 // Contact
 #contact {
 
-    button {
+  button {
+
+    background-color : $subColor;
 
     /* 文字サイズを1.4emに指定 */
     font-size: 1.0em;
+    width: 120px;
+    height: 40px;
 
-
-      width: 120px;
-      height: 40px;
-          /* 角丸の指定 */
+    /* 角丸の指定 */
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
 
-
-
-
-
+    &:hover
+    {
+      color : $baseColor;
+      background-color : $accentColor;
     }
-  ul {
-    text-align: center;
-    margin-top: 60px;
-    li {
-      display: inline-block;
-      font-size: 2.8rem;
-      text-align: center;
-      margin-right: 20px;
-      @include box-sizing(border-box);
-      vertical-align: top;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    
+
   }
+
 }
 
 /* Footer
@@ -227,7 +215,7 @@ footer {
   background-color: $subColor;
   padding: 10px 0;
   text-align: center;
-  color: #FFF;
+  color: $accentColor;
 }
 
 
@@ -325,7 +313,7 @@ footer {
 }
 
 .box {
-  background-image: url("https://raw.githubusercontent.com/yuichiro1975/responsive-site/master/images/img_profile.jpg");
+  background-image: url("https://raw.githubusercontent.com/yuichiro1975/responsive-site/master/images/img_top.jpg");
   height: 400px;
   width: 100%;
   background-size: cover;

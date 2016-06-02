@@ -60,8 +60,8 @@ section {
     justify-content: space-between;
     -webkit-flex-direction: column;
     flex-direction: column; }
-  #skills h2 {
-    color: #fdfcf6;
+  #skills h1 {
+    color: #0000ff;
     margin-bottom: 60px; }
   #skills .skill-box {
     -webkit-flex: 1;
@@ -154,6 +154,7 @@ section {
     clear: both; }
 
 #contact button {
+  background-color: #ffff00;
   /* 文字サイズを1.4emに指定 */
   font-size: 1.0em;
   width: 120px;
@@ -162,20 +163,9 @@ section {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; }
-#contact ul {
-  text-align: center;
-  margin-top: 60px; }
-  #contact ul li {
-    display: inline-block;
-    font-size: 2.8rem;
-    text-align: center;
-    margin-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: top; }
-    #contact ul li:last-child {
-      margin-right: 0; }
+  #contact button:hover {
+    color: #fdfcf6;
+    background-color: #0000ff; }
 
 /* Footer
 ------------------------------------------------------------*/
@@ -183,7 +173,7 @@ footer {
   background-color: #ffff00;
   padding: 10px 0;
   text-align: center;
-  color: #FFF; }
+  color: #0000ff; }
 
 @media (min-width: 769px) {
   /* Base
@@ -228,7 +218,7 @@ footer {
   height: 400px; }
 
 .box {
-  background-image: url("https://raw.githubusercontent.com/yuichiro1975/responsive-site/master/images/img_profile.jpg");
+  background-image: url("https://raw.githubusercontent.com/yuichiro1975/responsive-site/master/images/img_top.jpg");
   height: 400px;
   width: 100%;
   background-size: cover;
